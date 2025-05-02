@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    font: 1em Arial , Verdana , sans-serif;
+}
+h1#principal {
+    background-color:#48694F ;
+    color: #99DEA7;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.avancado {
+ color: hsl(9, 75%, 52%);
+}
+
+.intermediario {
+    color:hsl(56, 75%, 52%)
+}
+
+.basico {
+    color: hsl(110, 75%, 52%)
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    background-color:#64916D ;
+}
+
+
+
+/*
+#377EBD
+#4296E0
+#2B6394
+#1F486B
+#132C42
+/*
