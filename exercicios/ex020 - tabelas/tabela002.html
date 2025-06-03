@@ -21,23 +21,42 @@
             padding: 10px;
         }
 
+        thead > tr > th {
+            position: sticky;
+            background-color:  rgb(110, 110, 110) ;
+            top: -1px;
+            border: 2px solid black;
+        }
+
         table {
             border-collapse: collapse;
             width: 90vw;
-            height: 110vh;
+            height: 200vh;
+            position: relative;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-image: linear-gradient(to right , blue , white);
         }
 
         .num {
             text-align: right;
         }
+
+        caption {
+            background-color: rgb(121, 121, 121);
+            padding: 10px;
+            border: 2px solid black;
+        }
     </style>
 </head>
 <body>
     <table>
+        <caption>TABELA DA POPULÇÃO DOS ESTADOS</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width:100px;">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
@@ -84,7 +103,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>TOTAL DE HABITANTES</th>
+                <th scope="row">TOTAL DE HABITANTES</th>
                 <td>0000</td>
             </tr>
         </tfoot>
