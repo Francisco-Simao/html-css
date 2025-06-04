@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
         th , td {
             border: 1px solid black;
             width: 150px;
-            height: 100px;
+            height: 30px;
+            text-align: center;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif ;
+            font-weight: bolder;
+        }
+
+        .topo {
+            background-color: rgb(80, 80, 80);
+            color: white;
             font-weight: bolder;
         }
     </style>
@@ -20,16 +32,64 @@
 <body>
     <table>
         <thead>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th rowspan="2" scope="col" class="topo">Área</th>
+            <th rowspan="2" scope="col" class="topo">Disciplinas</th>
+            <th colspan="2" scope="colgroup" class="topo">Notas</th>
+            <th rowspan="2" scope="col" class="topo">Média</th>
             </tr>
             <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+            <th scope="col" class="topo">Nota 1</th>
+            <th scope="col" class="topo">Nota 2</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">EXATAS</th>
+                <td>MATEMATICA</td>
+                <td>7.5</td>
+                <td>4.6</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>FISICA</td>
+                <td>8.0</td>
+                <td>7.5</td>
+                <td>5.9</td>
+            </tr>
+            <tr>
+                <td>QUIMICA</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>7.9</td>
+            </tr>
+            <tr>
+                <td>BIOLOGIA</td>
+                <td>7.8</td>
+                <td>9.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="topo">MEDIA DE EXATAS</th>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="colgroup">HUMANAS</th>
+                <td>HISTORIA</td>
+                <td>3.7</td>
+                <td>4.9</td>
+                <td>5.0</td>
+            </tr>
+            <tr>
+                <td>GEOGRAFIA</td>
+                <td>8.0</td>
+                <td>7.4</td>
+                <td>8.9</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="topo">MEDIA DE HUMANAS</th>
+                <td>9.0</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
