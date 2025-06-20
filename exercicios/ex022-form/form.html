@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+     
+            
+    </style>
+</head>
+<body>
+    <h1>MEU PRIEMIRO FORMULARIO</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">DIGIET SEU NOME:</label>
+            <input type="text" name="nome"  required id="inome" placeholder="nome do usario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">SUA SENHA:</label>
+            <input type="password" name="sen" id="isen" minlength="8" size="15" required placeholder="sua senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+
+</body>
+<!-- TODOS OS FORMULARIOS DEVEM ESTAR DENTRO DO <form>-->
+<!-- O INPUT SERVE PARA 'FAZER UMA PERGUNTA' ELE IRA CRIAR UM CAMPO PARA TEXTO-->
+<!-- O NOME E O ID SÃO EXTREMAAMNETES IMPORTANTES -->
+<!-- O LABEL SERVE PARA LIGAR O NOME COM O CAMPO DO TEXTO-->
+<!-- O ID DEVE SER O MESMO PARA O FOR NO LABEL (QUANDO ONDE FOR GUARDAR OS DADOS SER JAVASCRIPT OU LABEL)-->
+<!-- AO USAR AUTO COMPLTE EM INPUT DEVMOS COLOCAR O DOQUE SE REFERE COMO: SENHA : current-password-->
+
+</html>
