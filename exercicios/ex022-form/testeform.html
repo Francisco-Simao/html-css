@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+           position: relative;
+           height: 100vh;
+           width: 100%;
+        }
+
+        form {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+            padding: 30px 10px;
+            border-radius: 10px ;
+            text-align: center;
+
+            background-image: linear-gradient( to top , rgb(162, 226, 255) , rgb(201, 238, 255), rgb(227, 243, 250));
+        }
+
+        form > p >input {
+            margin: 10px;
+
+        }
+
+        input {
+            display: block;
+            margin: 80px auto 10px auto;
+            padding: 10px;
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            
+        }
+
+        input.enviar:hover {
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iemail">EMAIL</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">TELEFONE</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+            <input type="submit" value="ENVIAR" class="enviar">
+        </form>
+    </main>
+</body>
+</html>
