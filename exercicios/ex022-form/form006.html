@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">ESTADO:</label>
+            <select name="ESTADO" id="iest"> <!-- select : IRA CRIAR UMA BARRA DE ESCOLHA-->
+
+                <option value="" selected>--ESCOLHA--</option> <!--MOSTRARA UMA OPÇÃO -->
+                <optgroup label="REGIÃO SUDESTE">
+                    <option value="MG">MINAS GERAIS</option>
+                    <option value="SP">SÃO PAULO</option>
+                    <option value="RJ">RIO DE JANEIRO</option>
+                </optgroup>
+                
+                <optgroup label="REGIÃO DO NORDESTE">
+                    <option value="MA">MARANHÃO</option>
+                    <option value="PE"> PERNAMBUCO</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                </optgroup>
+                <!--label no optgroup : SERVE PARA QUANDO ESTIVER NA BRRA DE ESCOLHA APARECA UMA ESCRITA DE SEPARAÇÃO-->
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">PROFISSÃO :</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof"> <!--datalist : IRA CRIAR UMA BARRA DE ESCOLHA COM UMA DIFERNÇA , SE COLOCAR UM INPUT ANTES E COLOCAR UM LIST COM O MESMO ID QUE A DATALIST , IRA CRIAR BARRA PARA TBM DIGITAR-->
+                <option value="ADM">
+                    ADMINISTRADOR
+                </option>
+                <option value="DEV">
+                    DESENVOLVEDOR
+                </option>
+                <option value="CONT">
+                    CONRTABILIDADE
+                </option>
+                <option value="PROF">
+                    PROFESSOR
+                </option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">MENSAGEM :</label> <!--textarea : IRA CRIAR UM LUGAR PARA COLCAR MSG-->
+            <textarea name="MENSAGEM" id="imsg" cols="30" rows="10">
+
+            </textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+</body>
+</html>
