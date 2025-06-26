@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="ivol">VOLUME</label>
+            <input type="range" name="vol" id="ivol" oninput="ival.innerHTML = Number(ivol.value)" max="10" min="0" value="4">
+            <output id="ival">4</output>
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+</body>
+</html>
