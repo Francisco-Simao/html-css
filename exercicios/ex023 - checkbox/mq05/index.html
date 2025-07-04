@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100&icon_names=menu" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>TESTANDO MEDIDA QUEIRIES</h1>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">OPÇÃO 1</a></li>
+                <li><a href="#">OPÇÃO 2</a></li>
+                <li><a href="#">OPÇÃO 3</a></li>
+                <li><a href="#">OPÇÃO 4</a></li>
+                <li><a href="#">OPÇÃO 5</a></li>
+                <li><a href="#">OPÇÃO 6</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h2>TESTANDO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolores aliquam porro quidem, quae omnis vel ea, pariatur ullam dolor optio voluptates quod aut facere amet voluptate. Dolorum, earum temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione neque delectus amet necessitatibus officia! Alias rem aspernatur nulla iste beatae aperiam facere adipisci, quos sunt magnam. Deleniti perferendis animi unde.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quis exercitationem accusamus quidem ea saepe reprehenderit unde perferendis culpa ut voluptatum perspiciatis qui alias sit atque? Quas enim et animi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit magnam debitis odit nesciunt doloremque fuga est quis expedita similique temporibus non voluptate perspiciatis nostrum id voluptas assumenda eum, sequi quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nihil est vel, sint recusandae inventore quasi qui nesciunt laborum iure amet tenetur provident corporis quae, optio aspernatur ipsam porro reprehenderit.</p>
+    </main>
+
+    <script>
+        function clickMenu() {
+            var itens = document.getElementById("itens");
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
