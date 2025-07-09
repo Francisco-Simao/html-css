@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* 
+TELAS PEQUENAS = 575PX
+CELULARES = 576px-767px
+TABLETS = 768px-991px
+PC = 992px-1199px 
+TV = 1200PX
+*/
+
+@media screen and (min-width: 768px) {
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    header > menu {
+        display: block;
+    }
+
+    header > menu ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* opcional para quebrar em telas muito grandes */
+    }
+
+    header > menu li {
+        margin: 0 10px;
+    }
+
+    menu a {
+        display: inline-block;
+        border: none;
+    }
+}

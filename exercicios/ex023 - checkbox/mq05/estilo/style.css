@@ -13,6 +13,7 @@ html {
 header {
     background-color:rgb(98, 98, 98);
     text-align: center;
+    width: 100vw;
 }
 
 header > h1 {
