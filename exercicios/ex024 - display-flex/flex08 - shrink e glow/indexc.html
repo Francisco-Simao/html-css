@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            background-color: lightblue;
+
+            display: flex;
+            flex-flow: row nowrap;
+
+            height: 400px;
+        }
+
+        div.itens {
+            background-color: darkblue;
+            color:  white;
+
+            flex-basis: 300px;
+            border: 1px solid white;
+        }
+
+        #a {
+            flex-grow: 1 ; /*AUMENTAR*/
+            flex-shrink: 0; /*DIMINUIR*/
+        }
+
+        #b {
+            flex-grow: 0 ;
+            flex-shrink: 3;
+        }
+
+        #c {
+            flex-grow: 2 ;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="a">A</div>
+        <div class="itens" id="b">B</div>
+        <div class="itens" id="c">C</div>
+    </div>
+</body>
+</html>
