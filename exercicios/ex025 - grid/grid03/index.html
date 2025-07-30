@@ -10,17 +10,7 @@
             border: 5px solid blue;
 
             display: grid;
-            grid-template: repeat(3,100px) / repeat(3 , auto); /* SHORTHAND , DA QUANTIDADE DE LINHAS , 1° ROWS , 2° COLUMNS */
-
-
-            grid-auto-rows: 100px; /* TODOS OS IRENS QUE FOREM COLCADOS ALEM DA QUANTIDADE DE LINHAS DITADAS , IRAM CVRESCER IGUAL (INPLICITO) (ROWS) */
-            grid-auto-columns: 100px; /* TODOS OS IRENS QUE FOREM COLCADOS ALEM DA QUANTIDADE DE LINHAS DITADAS , IRAM CVRESCER IGUAL (INPLICITO) (COLUMN)*/
-            gap: 10px;
-
-            place-content: space-around start; /* SHORTHAND DO AIGN-CONTENT E JUSTIFY-CONTET*/ 
-        
-            place-items: center end; /* SHORTHAND DO ALING-ITEMS E JUSTIFY-ITEMS */ 
-            
+            grid-template: repeat(3, 100px) / 1fr 2fr 1fr;
             
         }
 
@@ -40,7 +30,6 @@
         <div class="item">D</div>
         <div class="item">E</div>
         <div class="item">F</div>
-        <div class="item">G</div>
         <div class="item">G</div>
         <div class="item">G</div>
         <div class="item">G</div>

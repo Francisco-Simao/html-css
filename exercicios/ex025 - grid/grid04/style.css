@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    border: 3px dashed rgb(181, 181, 255);
+
+    grid-template: repeat(3 , 100px) / repeat(4 , auto);
+
+}
+
+.item {
+    border: 3px dashed rgb(255, 191, 181);
+}
+
+.x1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.x2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.x3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
